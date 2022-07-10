@@ -2,19 +2,19 @@
 @use 'mixins'
 
 *
-  font-family: Josefin Sans
-  padding: 0
   margin: 0
+  padding: 0
   box-sizing: border-box
+  font-family: Josefin Sans
 
 body
-  background-color: variables.$bg-color
   color: variables.$text-color
+  background-color: variables.$bg-color
 
   a
-    color: variables.$text-color
-    text-decoration: none
     transition: .4s
+    text-decoration: none
+    color: variables.$text-color
   
   ul
     list-style: none
@@ -25,8 +25,8 @@ body
   @include mixins.container
 
   &-brand
-    color: variables.$primary-color
     font-size: 3rem
+    color: variables.$primary-color
 
   &-navbar
     ul
@@ -35,8 +35,8 @@ body
 
       li
         margin: 0 1rem
-        text-transform: uppercase
         font-size: .8rem // 16px * 0.8
+        text-transform: uppercase
 
         .active
           color: variables.$secondary-color
@@ -47,8 +47,8 @@ body
     
   &-social-media
     ul
-      @include mixins.flex-center
       height: 100%
+      @include mixins.flex-center
 
       li
         margin: 0 1rem
@@ -58,19 +58,19 @@ body
             color: variables.$primary-color            
 
 .gallery
-  @include mixins.container
-  @include mixins.flex-center
+  padding: 0
   flex-wrap: wrap
   justify-content: space-between
-  padding: 0
+  @include mixins.container
+  @include mixins.flex-center
 
   &-card
     width: 31%
     height: 400px
     margin-bottom: 4%
-    @include mixins.flex-center
     flex-direction: column
     color: variables.$primary-color
+    @include mixins.flex-center
 
     &-title
       font-size: 2rem
@@ -78,16 +78,16 @@ body
       margin-bottom: 1rem
 
     &-btn
-      padding: .6rem 2rem
-      border: 2px solid variables.$primary-color
-      color: variables.$primary-color
       font-weight: 400
-      text-transform: uppercase
       letter-spacing: 1px
+      padding: .6rem 2rem
+      text-transform: uppercase
+      color: variables.$primary-color
+      border: 2px solid variables.$primary-color
 
       &:hover
-        background-color: variables.$primary-color
         color: variables.$bg-color
+        background-color: variables.$primary-color
 
   #card-1
     @include mixins.bg-img('animais.jpg')

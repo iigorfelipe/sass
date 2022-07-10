@@ -1,18 +1,18 @@
 * {
-  font-family: Josefin Sans;
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Josefin Sans;
 }
 
 body {
-  background-color: #000;
   color: #777;
+  background-color: #000;
 }
 body a {
-  color: #777;
-  text-decoration: none;
   transition: 0.4s;
+  text-decoration: none;
+  color: #777;
 }
 body ul {
   list-style: none;
@@ -26,8 +26,8 @@ body ul {
   margin: 0 auto;
 }
 .header-brand {
-  color: #fff;
   font-size: 3rem;
+  color: #fff;
 }
 .header-navbar ul {
   height: 100%;
@@ -37,8 +37,8 @@ body ul {
 }
 .header-navbar ul li {
   margin: 0 1rem;
-  text-transform: uppercase;
   font-size: 0.8rem;
+  text-transform: uppercase;
 }
 .header-navbar ul li .active {
   color: #20c997;
@@ -47,10 +47,10 @@ body ul {
   color: #20c997;
 }
 .header-social-media ul {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 .header-social-media ul li {
   margin: 0 1rem;
@@ -60,25 +60,25 @@ body ul {
 }
 
 .gallery {
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 1170px;
   padding: 1.5rem 0;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
 }
 .gallery-card {
   width: 31%;
   height: 400px;
   margin-bottom: 4%;
+  flex-direction: column;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  color: #fff;
 }
 .gallery-card-title {
   font-size: 2rem;
@@ -86,16 +86,16 @@ body ul {
   margin-bottom: 1rem;
 }
 .gallery-card-btn {
-  padding: 0.6rem 2rem;
-  border: 2px solid #fff;
-  color: #fff;
   font-weight: 400;
-  text-transform: uppercase;
   letter-spacing: 1px;
+  padding: 0.6rem 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #fff;
 }
 .gallery-card-btn:hover {
-  background-color: #fff;
   color: #000;
+  background-color: #fff;
 }
 .gallery #card-1 {
   background-image: url("../img/animais.jpg");
