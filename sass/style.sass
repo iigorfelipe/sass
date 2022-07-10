@@ -24,6 +24,9 @@ body
   justify-content: space-between
   @include mixins.container
 
+  @include mixins.mobile
+    padding: 1.1rem
+
   &-brand
     font-size: 3rem
     color: variables.$primary-color
@@ -32,6 +35,9 @@ body
     ul
       height: 100%
       @include mixins.flex-center
+
+      @include mixins.mobile
+        display: none
 
       li
         margin: 0 1rem
@@ -50,6 +56,9 @@ body
       height: 100%
       @include mixins.flex-center
 
+      @include mixins.mobile
+        display: none
+
       li
         margin: 0 1rem
 
@@ -64,6 +73,9 @@ body
   @include mixins.container
   @include mixins.flex-center
 
+  @include mixins.mobile
+    flex-direction: column
+
   &-card
     width: 31%
     height: 400px
@@ -71,6 +83,10 @@ body
     flex-direction: column
     color: variables.$primary-color
     @include mixins.flex-center
+
+    @include mixins.mobile
+      width: 90%
+      margin-bottom: 6%
 
     &-title
       font-size: 2rem
